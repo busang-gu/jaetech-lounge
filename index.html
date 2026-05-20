@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>내 집도, 은퇴도 — 부상구 × 금융쌤 4주 챌린지 1기</title>
-<meta name="description" content="집 한 채로는 은퇴 못 합니다. 부동산 + 금융 통합 자산 설계 4주 챌린지. 사전 신청 10만원 → 1기 회원 사실상 무료 (4주 완주 시 100% 환급). 5/3(일) 자정 마감.">
+<title>내 집도, 은퇴도 — 부상구 × 금융쌤 4주 챌린지 2기</title>
+<meta name="description" content="집 한 채로는 은퇴 못 합니다. 부동산 + 금융 통합 자산 설계 4주 챌린지 2기. 완주 시 100% 환급. 5/24(일) 자정 마감 · 6/1(월) 개강.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="내 집도, 은퇴도 — 1기 모집중">
-<meta property="og:description" content="부상구 × 금융쌤이 처음 함께하는 부동산 + 금융 통합 챌린지. 4주 완주 시 100% 환급.">
+<meta property="og:title" content="내 집도, 은퇴도 — 2기 모집중">
+<meta property="og:description" content="부상구 × 금융쌤 4주 챌린지 2기. 1주차 미제출 시 강퇴 · 완주 시 100% 환급. 6/1 개강.">
 <meta property="og:locale" content="ko_KR">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -906,7 +906,7 @@ footer.site .copy {
   overflow: hidden;
 }
 .price-card::before {
-  content: "🔥 1기 한정";
+  content: "🔥 2기 한정";
   position: absolute;
   top: 16px; right: 16px;
   background: var(--color-urgent);
@@ -1040,6 +1040,109 @@ footer.site .copy {
   color: var(--text-secondary);
   margin-top: 12px;
 }
+
+/* ===== 08. RULES (챌린지 룰: 1주차 미제출 강퇴) ===== */
+.rules-section {
+  background: var(--surface-dark, #0D1B2A);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+.rules-section::before {
+  content: '';
+  position: absolute;
+  top: -120px; right: -120px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+.rule-box {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.10) 0%, rgba(252, 211, 77, 0.08) 100%);
+  border: 1px solid rgba(252, 211, 77, 0.28);
+  border-radius: 22px;
+  padding: 36px 28px;
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .rule-box { padding: 44px 48px; }
+}
+.rule-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(239, 68, 68, 0.18);
+  color: #FCA5A5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+.rule-head {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin: 0 0 14px;
+}
+@media (min-width: 768px) {
+  .rule-head { font-size: 30px; }
+}
+.rule-head .accent {
+  color: var(--color-accent, #FFD700);
+}
+.rule-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.84);
+  margin: 0 0 22px;
+}
+.rule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rule-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+}
+.rule-list li::before {
+  content: '✓';
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  background: var(--color-secondary, #7ED957);
+  color: #0D1B2A;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 13px;
+  margin-top: 1px;
+}
+.rule-quote {
+  margin-top: 24px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid var(--color-secondary, #7ED957);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.88);
+}
 </style>
 </head>
 <body>
@@ -1052,7 +1155,7 @@ footer.site .copy {
     <div class="reveal">
       <span class="hero-badge">
         <span class="dot"></span>
-        재테크 라운지 · 1기 모집중 · 선착순 20명 🔥
+        재테크 라운지 · 2기 모집중 · 선착순 20명 🔥
       </span>
       <h1>
         <span class="row">🏠 <span class="grad-blue-purple">내 집도,</span> <span class="grad-gold">은퇴도.</span></span>
@@ -1080,7 +1183,7 @@ footer.site .copy {
       </div>
 
       <a class="btn-cta-primary" href="https://forms.gle/M615BkYNLWrki9Z17" target="_blank" rel="noopener">
-        ✏️ 1기 신청하기 (선착순 20명)
+        ✏️ 2기 신청하기 (선착순 20명)
       </a>
       <p class="micro-cta">신청 후 24시간 내 카카오톡으로 안내드립니다</p>
 
@@ -1104,7 +1207,7 @@ footer.site .copy {
     <div class="reveal">
       <span class="eyebrow"><span class="dot"></span>📌 추천 대상</span>
       <h2 class="section-title">내 집 마련 은퇴하기, 이런 분들에게 추천!</h2>
-      <p class="section-sub">아래 중 하나라도 해당된다면, 1기 신청하시는 편이 좋습니다.</p>
+      <p class="section-sub">아래 중 하나라도 해당된다면, 2기 신청하시는 편이 좋습니다.</p>
     </div>
 
     <div class="checklist">
@@ -1146,7 +1249,7 @@ footer.site .copy {
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow"><span class="dot"></span>📌 4주 완성 커리큘럼</span>
-      <h2 class="section-title">내 집도, 은퇴도 1기 커리큘럼 🔥</h2>
+      <h2 class="section-title">내 집도, 은퇴도 2기 커리큘럼 🔥</h2>
       <p class="section-sub">4주 동안 어떤 변화를 만들지, 단계별로 보여드립니다.</p>
     </div>
 
@@ -1184,8 +1287,8 @@ footer.site .copy {
 
           <span class="week-block-label lecture">강의 주제</span>
           <ul class="week-checks">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>내 집 마련 기초</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>최신 정책에 맞는 내 집 마련 전략</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>내 집 마련을 해야하는 이유</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>부동산 기초</li>
           </ul>
         </div>
       </article>
@@ -1214,14 +1317,12 @@ footer.site .copy {
           <div class="badge-row">
             <span class="week-badge"><span class="dot"></span>WEEK 04</span>
           </div>
-          <h3>🔹 통합 자산 설계도 완성</h3>
+          <h3>🔹 나만의 똘똘한 1채 찾기</h3>
 
           <span class="week-block-label lecture">강의 주제</span>
           <ul class="week-checks">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>내 집 마련 타임라인 확정</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>은퇴 시점별 자산 시뮬레이션 (30·40·50대)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>부동산 + 금융 통합 포트폴리오</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>비상 시나리오 + 리스크 관리 전략</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>부동산 입지</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>프롭테크 활용을 통해 나만의 똘똘한 1채 찾기</li>
           </ul>
         </div>
       </article>
@@ -1253,7 +1354,7 @@ footer.site .copy {
     <div class="reveal">
       <span class="eyebrow" style="color: var(--color-accent-dark); background: rgba(252,211,77,.18);"><span class="dot"></span>🎁 특별 혜택</span>
       <h2 class="section-title">재테크 라운지만의 특별 혜택!</h2>
-      <p class="section-sub">1기 등록자에게만 제공되는 3가지 혜택. 다음 기수부터는 사라집니다.</p>
+      <p class="section-sub">2기 등록자에게만 제공되는 3가지 혜택. 다음 기수부터는 사라집니다.</p>
     </div>
 
     <div class="benefit-cards">
@@ -1361,6 +1462,29 @@ footer.site .copy {
   </div>
 </section>
 
+<!-- ===== 08. RULES — 챌린지 룰 (1주차 미제출 강퇴) ===== -->
+<section class="rules-section">
+  <div class="wrap">
+    <div class="rule-box reveal">
+      <span class="rule-eyebrow">⚠️ 2기 챌린지 룰</span>
+      <h3 class="rule-head">
+        1주차 과제 미제출 시,<br>
+        <span class="accent">정중하게 강퇴됩니다.</span>
+      </h3>
+      <p class="rule-body">
+        지식에서 끝나지 않고 <b>성장할 수밖에 없는 환경을 세팅</b>하기 위해서예요.<br>
+        혼자 하면 미루게 되는 일을, 4주 동안 같이 끝까지 끌고 가는 게 챌린지의 본질이라고 봅니다.
+      </p>
+      <ul class="rule-list">
+        <li>1주차 과제는 가장 가벼운 워크북부터 시작합니다 — 부담은 적어요.</li>
+        <li>1주차 과제를 제출하지 않으면 단톡방·강의실 접근이 자동 종료됩니다.</li>
+        <li>강퇴 시 환급 대상에서 제외됩니다. (참가비 3만원 환급 X)</li>
+        <li>대신 4주 완주 시 100% 환급 — 끝까지 가는 분께는 사실상 무료.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 07. CTA-FINAL ===== -->
 <section class="final-cta bg-dark">
   <div class="glow-gold"></div>
@@ -1376,12 +1500,12 @@ footer.site .copy {
         방법을 몰라도 괜찮습니다. 부상구 × 금융쌤이 알려드립니다.
       </p>
       <p class="sub-2">
-        지금 1기 신청하시면<br>
-        4주 챌린지와 1기 한정 혜택을 모두 받으실 수 있습니다.
+        지금 2기 신청하시면<br>
+        4주 챌린지와 2기 한정 혜택을 모두 받으실 수 있습니다.
       </p>
 
       <a class="btn-cta-primary large" href="https://forms.gle/M615BkYNLWrki9Z17" target="_blank" rel="noopener">
-        ✏️ 1기 신청하기
+        ✏️ 2기 신청하기
       </a>
       <p class="micro-cta">선착순 20명 · 20명 도달 시 즉시 마감</p>
 
