@@ -1,0 +1,44 @@
+<!doctype html><html lang="ko"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1200px;height:630px;overflow:hidden;
+  font-family:'Pretendard Variable',Pretendard,sans-serif;
+  background:linear-gradient(140deg,#020817 0%,#0D1B2A 52%,#1B263B 100%);
+  color:#fff;position:relative}
+.glow{position:absolute;border-radius:50%;filter:blur(70px)}
+.g1{width:520px;height:520px;top:-160px;right:-120px;background:radial-gradient(circle,rgba(59,130,246,.42),transparent 62%)}
+.g2{width:420px;height:420px;bottom:-170px;left:-90px;background:radial-gradient(circle,rgba(126,217,87,.26),transparent 62%)}
+.inner{position:relative;z-index:2;height:100%;padding:64px 72px;display:flex;flex-direction:column;justify-content:center}
+.badge{display:inline-flex;align-items:center;gap:11px;align-self:flex-start;
+  background:rgba(126,217,87,.16);border:1.5px solid rgba(126,217,87,.42);
+  color:#BEE9A0;padding:11px 22px;border-radius:999px;
+  font-size:24px;font-weight:800;letter-spacing:-.02em;margin-bottom:30px}
+.badge .dot{width:11px;height:11px;border-radius:50%;background:#7ED957;box-shadow:0 0 12px #7ED957}
+h1{font-size:106px;font-weight:900;letter-spacing:-.055em;line-height:1.06;margin-bottom:26px}
+.b{background:linear-gradient(135deg,#60A5FA,#A78BFA);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.g{background:linear-gradient(135deg,#FCD34D,#F59E0B);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{font-size:33px;font-weight:700;color:#CBD5E1;letter-spacing:-.03em;margin-bottom:34px}
+.chips{display:flex;gap:12px}
+.chip{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14);
+  border-radius:15px;padding:14px 24px;font-size:25px;font-weight:800;letter-spacing:-.025em;color:#E8EDF4}
+.chip b{color:#FCD34D}
+.chip.on{background:rgba(126,217,87,.14);border-color:rgba(126,217,87,.4);color:#CDEBA8}
+.brand{position:absolute;right:72px;bottom:56px;text-align:right;z-index:2}
+.brand .n{font-size:27px;font-weight:900;letter-spacing:-.03em;color:#fff}
+.brand .n i{color:#7ED957;font-style:normal}
+.brand .u{font-size:19px;font-weight:600;color:#64748B;margin-top:5px}
+</style></head><body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<div class="inner">
+  <span class="badge"><span class="dot"></span>5기 모집중</span>
+  <h1><span class="b">내 집도,</span> <span class="g">은퇴도.</span></h1>
+  <p class="sub">부동산 + 금융을 한 번에 잡는 4주 챌린지</p>
+  <div class="chips">
+    <span class="chip">완주 시 <b>100% 환급</b></span>
+    <span class="chip on">1:1 자산 트레이닝</span>
+    <span class="chip">부상구 × 금융쌤</span>
+  </div>
+</div>
+<div class="brand"><div class="n">재테크 라운지<i>.</i></div><div class="u">busang-gu.github.io</div></div>
+</body></html>
